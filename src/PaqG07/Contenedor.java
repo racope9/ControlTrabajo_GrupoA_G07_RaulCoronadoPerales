@@ -93,4 +93,11 @@ public class Contenedor {
                         "\nEmpresaEmisora: '" + this.empresaEmisora + '\'' +
                         "\nEmpresaReceptora: '" + this.empresaReceptora + '\'';
         }
+
+        public java.lang.String toString2() {
+                return "Contenedor numero "+ this.id + ":" +
+                        "\nPeso: " + this.peso +
+                        "\nInspeccionado: " + this.inspeccionado + '\'' +
+                        "\nEmpresaReceptora: '" + this.empresaReceptora + '\'';
+        }
 }

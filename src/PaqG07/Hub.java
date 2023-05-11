@@ -90,6 +90,18 @@ public class Hub {
         return 1;
     }
 
+    public String BaseHub(int prio) {
+        StringBuilder salida = new StringBuilder();
+        int i = 10; //columna de abajo para sacar las bases.
+        for (int j = 0; j < 12; j++) {
+            if (hub[i][j].getPrioridad() == prio) {
+               salida.append(hub[i][j].toString2());
+            }
+        }
+        return salida.toString();
+    }
+
+
 
 
     @Override

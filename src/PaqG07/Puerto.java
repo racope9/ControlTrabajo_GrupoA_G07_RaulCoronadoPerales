@@ -48,6 +48,14 @@ public class Puerto {
         return "No existe el contenedor con ID " + id;
     }
 
+    public String BuscaContenedor (int prioridad) {
+        StringBuilder salida = new StringBuilder();
+        for (int i=0; i<3; i++){
+            salida.append(hubs[i].BaseHub(prioridad));
+        }
+        return salida.toString();
+    }
+
     @Override
     public String toString() {
         StringBuilder mapa = new StringBuilder();
